@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Your Website Title</title>
+</head>
+<body>
+    <a href="#main" id="skip-to-content">Skip to Main Content</a>
+
+    <nav>
+        <div class="background-container">
+        <div class="navbar">
+
+            <ul>
+                <li class ="current"> <a href = "index.html">ALL ABOUT ME</a></li>
+                <li> <a href="art.html">ART</a></li>
+                <li> <a href="places.html">PLACES</a></li>
+                <li> <a href="music.html">MUSIC</a></li>
+
+            </ul>
+        </div>
+        </div>
+    </nav>
+
+<main id = "main">
+
+    <div class="header">
+        <header>All About Me</header>
+    </div>
+	<div id = "explanation">
+			Hi, welcome to my page! Learn some facts about me by hovering over each image below!
+	</div>
+	<main class = "picgrid" id="main">
+	
+		<div class= "flipcard" tabindex = "0">
+			<div class="flipcard_content"> 
+			  <div class="flipcard_front">
+				<span><img src="images/sarasee.jpg" alt="Sarasee"></span>
+			  </div>
+			  <div class="flipcard_back">
+				<p>My name is Sarasee, I am a current Junior at the University of Michigan! I'm studying Business Administration and User Experience Design, but my dream is to own an art gallery in Soho! </p>
+              </div>
+            </div>
+			</div>
+		  </div>
+
+		  <div class= "flipcard" tabindex = "0">
+			<div class="flipcard_content">
+			  <div class="flipcard_front">
+				<span><img src="images/flint.jpg" alt="Flint"></span>
+			</div>
+			  <div class="flipcard_back">
+				<p>I'm originally from Flint, Michigan! I was born and raised there. </p>
+              </div>
+            </div>
+			</div>
+		  </div>
+
+		  <div class= "flipcard" tabindex = "0">
+			<div class="flipcard_content">
+			  <div class="flipcard_front">
+				<span><img src="images/family.jpg" alt="Family Photo"></span>
+			</div>
+			  <div class="flipcard_back">
+				<p>My family includes: me, my parents, my two older sisters, my brother in law, and my niece and nephew! </p>
+			  </div>
+			</div>
+		  </div>
+
+	    <div class = "contact-me">
+		<h2>Contact Me</h2>
+		<div class = "form">
+			<form action = "https://formspree.io/f/xyyqqvwy" method = "POST" class = "form">
+				<fieldset>
+					<br>
+					<i class="fa-solid fa-person"></i>
+					<label for="first_id" style>First Name:</label>
+						<input type="text" class="entry" placeholder="First Name" id="first_id" name="first"><br>
+					<i class="fa-solid fa-person"></i>
+					<br>
+					<label for="last_id" style>Last Name:</label>
+						<input type="text" class="entry" placeholder="Last Name" id="last_id" name="last"><br>
+					<i class="fa-solid fa-person"></i>
+					<br>
+					<label for="email_id">Email:</label>
+						<input type="email" class="entry" placeholder="uniqname@umich.edu" id="email_id" name="email"><br>
+					<br>
+					<i class="fa-solid fa-comment-dots"></i>
+					<label for="msg">Message:</label>
+						<textarea type="message entry" class="entry" placeholder="Message" id="msg" name="message"></textarea><br>
+					<br>
+					<button type="submit" class="submit">Submit!</button>
+				</fieldset>
+			</form>
+		</div>
+	</div>
+</main>
+
+<footer>
+    &copy; 2023 The Best of All Time
+</footer>
+	<script src = "index.js"></script>
+</body>
+</html>
